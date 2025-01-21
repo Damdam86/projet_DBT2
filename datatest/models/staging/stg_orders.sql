@@ -4,7 +4,8 @@ with source as (
 renamed as (
     select
         customer as customer_id,
-        id as order_id
+        id as order_id,
+        ordered_at as ordered_at
     from source
 )
 select * from renamed
